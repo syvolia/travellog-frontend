@@ -1,4 +1,4 @@
-const API_URL = window.location.hostname === 'localhost' ? 'http://localhost:1337' : 'https://travel-api-log.herokuapp.com/';
+const API_URL = 'https://travel-api-log.herokuapp.com';
 
 export async function listLogEntries() {
   const response = await fetch(`${API_URL}/api/logs`);
